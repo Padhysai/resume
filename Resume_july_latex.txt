@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~Data~~~~}\\\textbf{~~~~Science~~~~},
+        \textbf{Full Stack}\\\textbf{Dev},
+        \textbf{~~~~~~~~OOP~~~~~~~~~},
+        \textbf{~~~~~~Machine~~~~~~}\\\textbf{~~Learning~~},
+        \textbf{~~~~~~Deep~~~~~~}\\\textbf{~~Learning~~},
+        \textbf{~~~~Computer~~~~}\\\textbf{~~Vision~~}
+    }
+}
+
+% Programming skill bars
+\programming{{MongoDB $\textbullet$ HTML  $\textbullet$ CSS / 3}, {JavaScript $\textbullet$ SQL $\textbullet$ Jquery / 3.5}, {Python $\textbullet$ C $\textbullet$ C++ / 5}}
+
+% Projects text
+\education{
+\textbf{B.Tech., Mechanical Engineering}  \\
+Lovely Professional University \\
+2015 - 2019 | Jalandhar, India
+\\
+
+\textbf{10 +2., Maths, Physics, Chemistry}  \\
+SriChaitanya Educational Institutions \\
+2013 - 2015 | Hyderabad, India
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{SAI PRASAD} % Your name
+
+% title/career
+
+\cvlinkedin{/in/saiprasadpadhy/}
+\cvgithub{padhysai}
+\cvnumberphone{+91 955 000 3197} % Phone number
+\cvsite{padhysai.github.io/resume/} % Personal website
+\cvmail{saiprasadpadhy@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{June 2019 -}
+		{Present}
+        {Programmer Analyst}
+        {\href{https://www.cognizant.com/}{Cognizant}}
+        {}
+        {\begin{itemize}
+        \item Focused on developing .Net Applications, production deployment, testing, scaling
+        Tools: Visual studio, SharePoint, JavaScript, C-Sharp
+        
+        \item Helped in Continues Service Improvements to reduce cost to the Business.
+        \item Participated Several Hackathons and competitions Asp.Net and Machine Learning applications.
+        \item Following Agile methodology to manage the project efficiently.
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{Jan 2019 -}
+		{Jun 2019}
+        {Internship Trainee}
+        {\href{https://www.cognizant.com/}{Cognizant}}
+        {}
+        {
+        {\begin{itemize}
+
+        \item Gathering the requirements, analyzing the requirements and feasibility check.
+        \item  Designed and developed end to end web application for Health care industry.
+        \item Collaborating as a team to deliver the final product within the stipulated timeline.
+    \end{itemize}}
+        }
+
+
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{twenty}
+	\twentyitem
+    	{August 2020}
+		{}
+        {Automated Bank Account creation system - InProgress}
+        
+        {}
+        {
+       	\textbf{Overview}: Building an end to end project which can create Bank account by providing the Valid ID proof. 
+        {\begin{itemize}
+
+		\end{itemize}}
+        }
+\end{twenty}
+\\
+
+\begin{twenty}
+	\twentyitem
+    	{July 2020}
+		{}
+        {Automated Vehicle Number Plate Detection and OCR}
+        
+        {}
+        {
+       	\textbf{Overview}: Built an end to end solution for detecting the vehicle number plates and extracting vehicle information using License plate with OCR which can used at Toll gates, Shopping malls parking places etc.,
+        {\begin{itemize}
+        \item Implemented Modular solution which can be easy to maintenance of the application.
+        \item Implemented the Model Re-training approach to train the model periodically.
+        \item \textbf{Tools}: Python, Object Detection, Image Processing, OCR \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+\\
+
+\begin{twenty}
+	\twentyitem
+    	{March 2020}
+		{}
+        {Service Desk ticket resolution time prediction}
+        
+        {}
+        {
+       	\textbf{Overview}: Most of the critical issues are handled and being tracked in the form of tickets in a typical IT environment and users have no idea when the problem is to be addressed after creating a problem ticket. implemented a end to end solution to predict the resolution time of the ticket.
+        {\begin{itemize}
+        \item Implemented Modular solution which can be easy to maintenance of the application.
+        \item Implemented the Model Re-training approach to train the model periodically.
+        \item Deployed the solution in the AWS EC2 instance using AWS Lambda function.
+        \item \textbf{Tools}: Python,  Machine Learning, AWS \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+\\
+
+\begin{twenty}
+	\twentyitem
+    	{March 2020}
+		{}
+        {Covid-19 Responder Chatbot }
+        
+        {}
+        {
+       	\textbf{Overview}:  Created a chatbot which will provide location based information or generic COVID-19 related information.
+        {\begin{itemize}
+        \item Built an Chatbot which can provide below mentioned details:
+        \item \textbf{number of cases in a specific area}
+        \item \textbf{lockdown situation}
+        \item \textbf{Symptoms and Virus Spread}
+        \item \textbf{Tools}: Python, Google DialogFlow, Flask \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+
+\end{document} 
