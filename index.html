@@ -1,257 +1,769 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Portfolio</title>
-  <!-- add icon link -->
-  <link rel = "icon" href =  
-  "https://www.flaticon.com/svg/static/icons/svg/3600/3600950.svg" type = "image/x-icon"> 
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <!-- Title-->
+  <title>Personal Portfolio</title>
+  <!-- Description-->
+  <meta name="description" content="Personal Portfolio Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.flaticon.com/svg/static/icons/svg/3600/3600950.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.flaticon.com/svg/static/icons/svg/3600/3600950.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.flaticon.com/svg/static/icons/svg/3600/3600950.svg">
+  <!-- Web fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
+  <!-- CSS vendors-->
+  <link rel="stylesheet" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/lity.min.css">
+  <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+  <!-- Main CSS-->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- CSS Color scheme-->
+  <link id="color-scheme" rel="stylesheet" href="css/colors/main-redpink.css">
+  <!-- Custom CSS (Add your custom CSS styles to this file)-->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/custom-logo.css">
+  <!-- removeIf(customizerDist)-->
+  <link rel="stylesheet" href="css/customizer/main.css">
+  <!-- endremoveIf(customizerDist)-->
 </head>
-<body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero"><h1><span>S</span>ai <span>P</span>rasad</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Skills</a></li>
-            <li><a href="#skills" data-after="Skills">MyJourney</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+
+<body class="theme-dark">
+  <!-- Preloader-->
+  <div class="preloader">
+    <div class="preloader-block">
+      <div class="preloader-icon"><span class="loading-dot loading-dot-1"></span><span class="loading-dot loading-dot-2"></span><span class="loading-dot loading-dot-3"></span></div>
+    </div>
+  </div>
+  <div id="overlay-effect"></div>
+  <!-- Navbar-->
+  <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
+      <!-- Navbar Logo-->
+      <!--<img class="img-fluid" src="img/logo.png" alt="Logo">--><div><h2 data-text="Sai Prasad..." class="cust-logo">Sai Prasad...</h2></div></a>
+    <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
+    <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
+      <!-- Navbar menu-->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>-->
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home-->
+  <section class="home-area element-cover-bg" id="home" style="background-image:url(img/image.jpg)">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center">
+        <div class="col-12 col-lg-8 home-content text-center">
+          <h1 class="home-name">Sai <span>Prasad</span></h1>
+          <h4 class="cd-headline clip home-headline">I’m a <span class="cd-words-wrapper single-headline"><b class="is-visible">Developer</b><b>Data Scientist</b><b>Freelancer</b></span></h4>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>SaiPrasad <span></span></h1>
-        <a href="https://projects.saiprasadpadhy.com/" target = "_blank" type="button" class="cta">Projects</a>
+    <div class="fixed-wrapper">
+      <!-- Languages list-->
+      <div class="fixed-block block-left">
+        <ul class="list-unstyled languages-list">
+          <li><a href="#0"><span class="single-language">ENG</span></a></li>
+          <!--<li><a href="#0"><span class="single-language">JAP</span></a></li>-->
+        </ul>
+      </div>
+      <!-- Social media icons-->
+      <div class="fixed-block block-right">
+        <ul class="list-unstyled social-icons">
+          <li><a href="https://twitter.com/Saipras28522258"><i class="icon ion-logo-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/saiprasad.rocky.5"><i class="icon ion-logo-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/saiprasadpadhy/"><i class="icon ion-logo-linkedin"></i></a></li>
+          <li><a href="https://github.com/padhysai"><i class="icon ion-logo-github"></i></a></li>
+          <li><a href="https://www.instagram.com/sai_prasad006/"><i class="icon ion-logo-instagram"></i></a></li>
+        </ul>
       </div>
     </div>
   </section>
-  <!-- End Hero Section  -->
-
-  <!-- Skills Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Sk<span>i</span>lls</h1>
+  <!-- About lightbox-->
+  <div class="lightbox-wrapper" id="about" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/color/2x/python.png"/></div>
-          <h2>Programming Languages</h2>
-          <p>Python</br>
-            SQL</br>
-            JavaScript</br>
-            JQuery</br>
-            </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/nolan/2x/learning.png"/></div>
-          <h2>Data Science</h2>
-          <p>Machine Learning</br>
-            Deep Learning</br>
-            Computer Vision</br>
-            Natural Language Processing</br>
-            </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/nolan/2x/cloud.png"/></div>
-          <h2>Cloud Deployment</h2>
-          <p>Google Cloud Platform</br>
-            Azure Cloud Services </br>
-            AWS Cloud</br>
-            Pivotal Cloud</br>
-            </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/color/2x/pycharm.png"/></div>
-          <h2>Tools</h2>
-          <p>PyCharm</br>
-            Microsoft Visual Studio </br>
-            SQL Workbench</br>
-            Jupyter Notebook</br>
-            Tensor Board </br></p>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Get to know me</p>
+                  <h2 class="section-title">About Me</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Info section-->
+            <div class="info-section single-section">
+              <div class="row align-items-center">
+                <!-- Picture part-->
+                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/info-img.png" alt="About Picture"></div>
+                <!-- Content part-->
+                <div class="col-12 col-lg-7 info-content">
+                  <div class="content-block">
+                    <h2 class="content-subtitle">Who am i?</h2>
+                    <h6 class="content-title">I'm Sai Prasad, an Entry level Data Scientist</h6>
+                    <div class="content-description">
+                      <p>An entry-level data scientist who takes pride in building models that translate data points into business insights. Used my skills to Build and Deploy the models in various Cloud Platforms, now eager to apply the same knowledge to real-world business problems using Predictive Modelling, Data Analysis, Machine Learning, Deep Learning and Computer Vision.</p>
+                    </div>
+                    <address class="content-info">
+                      <div class="row">
+                        <div class="col-12 col-md-6 single-info"><span>Name:</span>
+                          <p>Sai Prasad</p>
+                        </div>
+                        <div class="col-12 col-md-6 single-info"><span>Email:</span>
+                          <p><a href="mailto:saiprasadpadhy@gmail.com">saiprasadpadhy@gmail.com</a></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6 single-info"><span>Age:</span>
+                          <p>22</p>
+                        </div>
+                        <div class="col-12 col-md-6 single-info"><span>From:</span>
+                          <p>Vizag, India</p>
+                        </div>
+                      </div>
+                    </address>
+                    <div class="d-block d-sm-flex align-items-center"><a class="btn content-download button-main button-scheme" href="#0" role="button">Download CV</a>
+                      <ul class="list-unstyled list-inline content-follow">
+                        <li class="list-inline-item"><a href="https://twitter.com/Saipras28522258"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/sai_prasad006/"><i class="icon ion-logo-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/saiprasadpadhy/"><i class="icon ion-logo-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/padhysai"><i class="icon ion-logo-github"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/saiprasad.rocky.5"><i class="icon ion-logo-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Services section-->
+            <div class="services-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">Services i offer to you</p>
+                    <h2 class="section-title">My Services</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-logo-electron"></i>
+                    <h6 class="service-title">Predictive Analytics Solutions</h6>
+                    <p class="service-description">Predictive Analytics Solutions for enabling Decision-Making and Intelligence, Risks Analysis and Predictive Analytics Capabilities - Predictive Modeling and Data Mining.</br></br></p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-"></i>
+                    <h6 class="service-title">Time Series Forecasting Analysis</h6>
+                    <p class="service-description">Solutions for Building Time Series Forecasting forecasting models and automated time series forecasting applications using Data and Statistical Analysis Techniques.</p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-logo-"></i>
+                    <h6 class="service-title">Operational Analytics Solutions</h6>
+                    <p class="service-description">Enterprise Operational solutions for developing Predictive Analytics Capabilities and Empowering Enterprise performance analytics Solutions.</br></br></p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-logo-"></i>
+                    <h6 class="service-title">Product Development</h6>
+                    <p class="service-description">Developing End to end products using Latest cutting edge technologies and AI.</br></br></p>
+                  </div>
+                </div>
+                <!-- Single service-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-md-"></i>
+                    <h6 class="service-title">Vision Based Solutions</h6>
+                    <p class="service-description">Building Vision based solutions using video object tracking and image analysis.</p>
+                  </div>
+                </div>
+                <!-- Single service
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service"><i class="icon service-icon ion-ios-rocket"></i>
+                    <h6 class="service-title">Branding</h6>
+                    <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+            
+            
+            <!-- Testimonials section-->
+            <div class="testimonials-section single-section" id="Testimonials">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">What my clients think about me</p>
+                    <h2 class="section-title">Testimonials</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="my-slider">
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-1.jpg" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">Julia Sakura</h6><span class="client-role">Envato Customer</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <!-- Single review-->
+                  <div class="single-review swiper-slide">
+                    <div class="review-header d-flex justify-content-between">
+                      <div class="review-client">
+                        <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-3.jpg" alt="Client">
+                          <div class="client-details">
+                            <h6 class="client-name">Maria Wilson</h6><span class="client-role">Envato Customer</span>
+                          </div>
+                        </div>
+                      </div><i class="icon ion-md-quote review-icon"></i>
+                    </div>
+                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pricing section-->
+            <div class="pricing-section single-section" id="Pricing">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">Get started with my services</p>
+                    <h2 class="section-title">Choose a Plan</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-md-egg"></i>
+                    <h3 class="plan-type">Standard</h3>
+                    <h2 class="plan-price">$19/month</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Mobile App Design</li>
+                      <li>Responsive Design</li>
+                      <li>Database Development</li>
+                      <li>Web Design</li>
+                      <li>24/7 Support</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Standard</a>
+                  </div>
+                </div>
+                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-ios-rocket"></i>
+                    <h3 class="plan-type">Professional</h3>
+                    <h2 class="plan-price">$29/month</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Mobile App Design</li>
+                      <li>Responsive Design</li>
+                      <li>Database Development</li>
+                      <li>Web Design</li>
+                      <li>24/7 Support</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Pro</a>
+                  </div>
+                </div>
+                <!-- Single plan-->
+                <div class="col-lg-4">
+                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-logo-ionic"></i>
+                    <h3 class="plan-type">Business</h3>
+                    <h2 class="plan-price">$39/month</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Mobile App Design</li>
+                      <li>Responsive Design</li>
+                      <li>Database Development</li>
+                      <li>Web Design</li>
+                      <li>24/7 Support</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End skills Section -->
-
-  <!-- journey Section -->
-  <section id="skills">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Jou<span>r</span>ney</h1>
+  </div>
+  <!-- Resume lightbox-->
+  <div class="lightbox-wrapper" id="resume" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://seeklogo.com/images/C/Cognizant_Technology_Solutions-logo-525DD9ECA8-seeklogo.com.png"/></div>
-          <h2>Cognizant Technology solutions - Programmer Analyst (2019-06 - Current)</h2>
-          <p>
-            1. Used <b>Deep Learning</b> and <b>Vision</b> based algorithms to analyze and solve complex business problems.</br>
-            2. Evaluated reliability of source information by weihghing raw data to make data easier to interpret. </br>
-            3. Performed Data Cleaning and Data Preperation to support high quality data and catch errors before processing. </br>
-            4. Created Data Visualization graphics, translating complex data sets into comprehensive visual representations. </br>
-            5. Presented data science findings to peers, illustrating progress made during various tasks. </br>
-          </p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://seeklogo.com/images/C/Cognizant_Technology_Solutions-logo-525DD9ECA8-seeklogo.com.png"/></div>
-          <h2>Cognizant Technology solutions - Internship Trainee (2019-01 - 2019-06)</h2>
-          <p>
-            1. Identifying areas for modification in existing programs and subsequently developing these modifications.</br>
-            2. Gathering the requirements, analyzing the requirements and feasibility check.</br>
-            3. Collaborating as a team to deliver the final product within the stipulated timeline.</br>
-            4. Worked with software team to coordinate development of new software features. </br>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End journey Section -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Automated Vehicle Number Plate Detection and OCR</h1>
-            <h2>Python, Tensorflow, Object Detection, Image Processing, OCR</h2>
-            <p>Built an end to end solution for detecting the vehicle number plates and
-              extracting vehicle information using License plate with OCR which can used at Toll gates,
-              Shopping malls parking places etc.,Implemented Modular solution which can be easy to maintenance of the application.Implemented the Model Re-training approach to train the model periodically.</br></p>
-          </div>
-          <div class="project-img">
-            <img src="https://bigdata-madesimple.com/wp-content/uploads/2019/02/numberplate.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Face Mask Detection</h1>
-            <h2>Python, Object Detection, Deep Learning, TFOD</h2>
-            <p></br>The utility of masks during the Covid-19 pandemic seems widely accepted now. The dominant scientific opinion says masks are very useful, and even relatively simple home-made masks can offer a great degree of protection against the novel coronavirus. With several countries like Singapore, Japan, states, and cities in the United States like Texas and New York making wearing masks mandatory for the public there comes a need for an automated system that is capable of helping authorities maintain guidelines which is where we can hope to turn to computer vision for a solution</p>
-          </div>
-          <div class="project-img">
-            <img src="https://camo.githubusercontent.com/0180452c15a16a36409fe14a013537defdac90c1/68747470733a2f2f64336c6b63336e357468303178372e636c6f756466726f6e742e6e65742f77702d636f6e74656e742f75706c6f6164732f323032302f30342f30313032333333352f4d61736b446574656374696f6e5f42616e6e65722d312d312e706e67" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Car Brand Logo Detection</h1>
-            <h2>Python, Image Classification, Deep Learning, Keras</h2>
-            <p></br>Deep learning has been gaining momentum over last decades: self-driving cars, efficient web search, speech and image recognition, video processing. It is a very interesting and complex topic, which could drive the future of technology.The main aim of this project is to classify the different brands by their logo. here we are using the Pretrained models provided by Keras. I used VGG16 model for this task. </p>
-          </div>
-          <div class="project-img">
-            <img src="https://wallpapercave.com/wp/wp1831049.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Predicting Air Quality</h1>
-            <h2>Python, Machine Learning, EDA, Web Scraping</h2>
-            <p></br>AQI values at or below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is unhealthy: at first for certain sensitive groups of people, then for everyone as AQI values get higher. We are predicting Air quality of Hyderabed based on real data collected by Web Scraping on different websites.</p>
-          </div>
-          <div class="project-img">
-            <img src="https://wallpapercave.com/wp/wp2802824.jpg" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Data Scientist</h2>
-        <p>An entry-level data scientist who takes pride in building models that translate data points into business insights.
-          Used my skills to Build and Deploy the models in various Cloud Platforms, now eager to apply the same knowl-
-          edge to real-world business problems. I am adequately trained in Python, C, C++, SQL, JQuery, Flask and Java Script and have knowledge of predictive modelling, data analysis, machine learning, deep learning and computer vision.</p>
-        <a href="https://github.com/padhysai" class="cta" target = "_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/nolan/2x/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+91 9550003197</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/nolan/2x/email.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>saiprasadpadhy@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/nolan/2x/address.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Srikakulam, Andhra Pradesh, India</h2>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Check out my Resume</p>
+                  <h2 class="section-title">Resume</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Resume section-->
+            <div class="resume-section single-section">
+              <div class="row">
+                <!-- Education part-->
+                <div class="col-12 col-md-6">
+                  <div class="col-block education">
+                    <h3 class="col-title">Education</h3>
+                    <!--<div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Computer Science</h5><span class="item-details">Cambridge University / 2004 - 2007</span>
+                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Bachelor Degree</h5><span class="item-details">University of Tokyo / 2008 - 2010</span>
+                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                    </div>-->
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Bachelor Degree</h5><span class="item-details">Lovely Professional University / 2015 - 2019</span>
+                      <p class="item-description"></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Experience part-->
+                <div class="col-12 col-md-6">
+                  <div class="col-block experience">
+                    <h3 class="col-title">Experience</h3>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Internship Trainee</h5><span class="item-details">Cognizant Technology Solutions / 01/19 - 06/19</span>
+                      <p class="item-description"></p>
+                    </div>
+                    <div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">Software Engineer</h5><span class="item-details">Cognizant Technology Solutions / 2019 - Present</span>
+                      <p class="item-description"></p>
+                    </div>
+                    <!--<div class="resume-item"><span class="item-arrow"></span>
+                      <h5 class="item-title">UI/UX Designer</h5><span class="item-details">Discord / 2019 - Present</span>
+                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Skills section-->
+            <div class="skills-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <div class="section-heading">
+                    <p class="section-description">My level of knowledge in some tools</p>
+                    <h2 class="section-title">My Skills</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="single-skill" data-percentage="90">
+                    <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="90">
+                    <div class="skill-info"><span class="skill-name">Deep Learning/Computer Vision</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="85">
+                    <div class="skill-info"><span class="skill-name">Machine Learning</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="single-skill" data-percentage="80">
+                    <div class="skill-info"><span class="skill-name">Statistics</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="80">
+                    <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="80">
+                    <div class="skill-info"><span class="skill-name">HTML/CSS</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Video section-->
+            <div class="video-section single-section" id="VideoTour">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6 content-part">
+                  <h3 class="video-title">Take a tour of my office</h3>
+                  <p class="video-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum quasi assumenda culpa praesentium consectetur voluptatibus expedita. Voluptatem tempore, aspernatur rem facilis, distinctio nemo! Odio velit, nemo dolorem voluptas!</p>
+                  <p class="video-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui aspernatur unde mollitia, in laborum.</p>
+                </div>
+                <div class="col-12 col-lg-6 video-part"><a class="media-lightbox" href="https://www.youtube.com/watch?v=doteMqP6eSc" data-lightbox>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <div class="embed-responsive-item element-cover-bg"><span class="play-wrapper"><i class="icon ion-md-play"></i></span></div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>S</span>ai <span>P</span>rasad</h1></div>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/saiprasadpadhy/" target = "_blank"><img src="https://img.icons8.com/nolan/2x/linkedin.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/sai_prasad006/" target = "_blank"><img src="https://img.icons8.com/nolan/2x/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://github.com/padhysai" target = "_blank"><img src="https://img.icons8.com/nolan/2x/github.png"/></a>
+  </div>
+  <!-- Portfolio lightbox-->
+  <div class="lightbox-wrapper" id="portfolio" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Showcasing some of my best work</p>
+                  <h2 class="section-title">Portfolio</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio section-->
+            <div class="portfolio-section single-section">
+              <div class="row">
+                <!-- Filter nav-->
+                <div class="col-12">
+                  <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
+                    <li class="list-inline-item tab-active" data-filter="*">All</li>
+                    <li class="list-inline-item" data-filter=".ML">Machine Learning</li>
+                    <li class="list-inline-item" data-filter=".CV">Computer Vision</li>
+                    <li class="list-inline-item" data-filter=".NLP">NLP</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Thumbnail list-->
+              <div class="portfolio-grid row">
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 CV"><a class="portfolio-item" href="img/numberplate.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/numberplate.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Automated Vehicle Number Plate Detection and OCR</h6><span class="content-more"><a href="https://projects.saiprasadpadhy.com/" target="_blank">More Info</a></span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 CV"><a class="portfolio-item" href="img/mask-det.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/mask-det.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Face Mask Detection</h6><span class="content-more"><a href="https://projects.saiprasadpadhy.com/" target="_blank">More Info</a></span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 CV"><a class="portfolio-item" href="img/car_detection.png" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/car_detection.png">
+                      <div class="item-content">
+                        <h6 class="content-title">Car Brand Logo Detection</h6><span class="content-more"><a href="https://projects.saiprasadpadhy.com/" target="_blank">More Info</a></span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item
+                <div class="single-item col-6 col-lg-4 ML"><a class="portfolio-item" href="img/item-4.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-4.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Predicting Air Quality</h6><span class="content-more">More Info</span>
+                      </div>
+                    </div>
+                  </a></div>-->
+                <!-- Single item-->
+                <div class="single-item col-6 col-lg-4 ML"><a class="portfolio-item" href="img/air-quality.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/air-quality.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Predicting Air Quality</h6><span class="content-more"><a href="https://projects.saiprasadpadhy.com/" target="_blank">More Info</a></span>
+                      </div>
+                    </div>
+                  </a></div>
+                <!-- Single item
+                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/item-6.jpg" data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-6.jpg">
+                      <div class="item-content">
+                        <h6 class="content-title">Packaging Box Mockup</h6><span class="content-more">More Info</span>
+                      </div>
+                    </div>
+                  </a></div>-->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <p>Copyright © 2020 SaiPrasad. All rights reserved</p>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+  </div>
+  <!-- Blog lightbox-->
+  <div class="lightbox-wrapper" id="blog" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Check out my latest blog posts</p>
+                  <h2 class="section-title">My Blog</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Blog section-->
+            <div class="blog-section single-section">
+              <div class="row justify-content-center">
+                <!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-1.jpg" alt="Blog post"><span class="content-date">11 Dec, 20</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">Top tools for Photographers</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-2.jpg" alt="Blog post"><span class="content-date">12 Aug, 20</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">Take a tour of my office</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-3.jpg" alt="Blog post"><span class="content-date">4 Feb, 20</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">How i became a Web Designer</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div><!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-4.jpg" alt="Blog post"><span class="content-date">11 Dec, 19</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">How to improve work performance</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-5.jpg" alt="Blog post"><span class="content-date">15 Nov, 19</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">How to work from home</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Single post-->
+                <div class="col-12 col-sm-8 col-lg-4">
+                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-6.jpg" alt="Blog post"><span class="content-date">8 Aug, 19</span></a>
+                    <div class="card-body post-content"><a href="#0">
+                        <h5 class="card-title content-title">How to enjoy your business trip</h5>
+                      </a>
+                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact lightbox-->
+  <div class="lightbox-wrapper" id="contact" data-simplebar>
+    <div class="container">
+      <div class="lightbox-close">
+        <div class="close-btn" data-modal-close=""><span class="btn-line"></span></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="lightbox-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-heading page-heading">
+                  <p class="section-description">Feel free to contact me anytimes</p>
+                  <h2 class="section-title">Get in Touch</h2>
+                  <div class="animated-bar"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Contact section-->
+            <div class="contact-section single-section">
+              <div class="row">
+                <!-- Contact form-->
+                <div class="col-12 col-lg-7">
+                  <form class="contact-form" id="contact-form" action="#">
+                    <h4 class="content-title">Message Me</h4>
+                    <div class="row">
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
+                      <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
+                      <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                      <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send Message</button>
+                        <p class="contact-feedback"></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Contact info-->
+                <div class="col-12 col-lg-5">
+                  <div class="contact-info">
+                    <h4 class="content-title">Contact Info</h4>
+                    <p class="info-description">Always available for freelance work if the right project comes along, Feel free to contact me!</p>
+                    <ul class="list-unstyled list-info">
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-logo-ionic"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Name</h6><span class="info-value">Sai Prasad</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-map"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Location</h6><span class="info-value">Srikakulam, Andhra Pradesh, India.</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-call"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Call Me</h6><span class="info-value"><a href="tel:+919550003197">+91 955 000 3197</a></span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
+                          <div class="media-body info-details">
+                            <h6 class="info-type">Email Me</h6><span class="info-value"><a href="mailto:saiprasadpadhy@gmail.com">saiprasadpadhy@gmail.com</a></span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- removeIf(customizerDist)-->
+  <div class="demo-tool">
+    <div class="tool-wrapper">
+      <span class="tool-toggler"><i class="icon ion-md-settings"></i></span>
+      <div class="tool-box">
+        <ul class="list-inline single-block color-switcher">
+          <li class="list-inline-item" style="background-color: #2c31ff;" data-path="css/colors/main-blueviolet.css"></li>
+          <li class="list-inline-item" style="background-color: #3460D1;" data-path="css/colors/main-nightskyblue.css"></li>
+          <li class="list-inline-item" style="background-color: #EE3158;" data-path="css/colors/main-redpink.css"></li>
+          <li class="list-inline-item" style="background-color: #007bff;" data-path="css/colors/main-blue.css"></li>
+          <li class="list-inline-item" style="background-color: #17a2b8;" data-path="css/colors/main-cyan.css"></li>
+          <li class="list-inline-item" style="background-color: #3365b0;" data-path="css/colors/main-darkblue.css"></li>
+          <li class="list-inline-item" style="background-color: #a435b7;" data-path="css/colors/main-darkmagenta.css"></li>
+          <li class="list-inline-item" style="background-color: #c93e70;" data-path="css/colors/main-darkpink.css"></li>
+          <li class="list-inline-item" style="background-color: #bf2a3d;" data-path="css/colors/main-darkred.css"></li>
+          <li class="list-inline-item" style="background-color: #28a745;" data-path="css/colors/main-green.css"></li>
+          <li class="list-inline-item" style="background-color: #6610f2;" data-path="css/colors/main-indigo.css"></li>
+          <li class="list-inline-item" style="background-color: #fd7e14;" data-path="css/colors/main-orange.css"></li>
+          <li class="list-inline-item" style="background-color: #e83e8c;" data-path="css/colors/main-pink.css"></li>
+          <li class="list-inline-item" style="background-color: #6f42c1;" data-path="css/colors/main-purple.css"></li>
+          <li class="list-inline-item" style="background-color: #dc3545;" data-path="css/colors/main-red.css"></li>
+          <li class="list-inline-item" style="background-color: #20c997;" data-path="css/colors/main-teal.css"></li>
+          <li class="list-inline-item" style="background-color: #333;" data-path="css/colors/main-dark.css"></li>
+          <li class="list-inline-item" style="background-color: #78b230;" data-path="css/colors/main-yellowgreen.css"></li>
+          <li class="list-inline-item" style="background-color: #E16F7C;" data-path="css/colors/main-tangopink.css"></li>
+          <li class="list-inline-item" style="background-color: #6F73D2;" data-path="css/colors/main-moodyblue.css"></li>
+          <li class="list-inline-item" style="background-color: #664C43;" data-path="css/colors/main-brown.css"></li>
+          <li class="list-inline-item" style="background-color: #4770D9;" data-path="css/colors/main-royalblue.css"></li>
+          <li class="list-inline-item" style="background-color: #ffb100;" data-path="css/colors/main-darkyellow.css"></li>
+        </ul>
+        <div class="single-block buy-btn mb-0">
+          <a class="btn btn-success btn-sm" target="_blank" href="https://themeforest.net/item/kitzu-personal-portfolio-template/26075107" role="button">Buy Kitzu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- endremoveIf(customizerDist)-->
+  <!-- Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/animatedModal.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/lity.min.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Custom JS (Add your custom JS scripts to this file)-->
+  <script src="js/custom.js"></script>
+  <!-- removeIf(customizerDist)-->
+  <script src="css/customizer/main.js"></script>
+  <!-- endremoveIf(customizerDist)-->
 </body>
+
 </html>
